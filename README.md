@@ -1,16 +1,40 @@
-# React + Vite
+Expense Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based web application for tracking income and expenses, with data persisted in `localStorage`. Users can add, edit, and delete entries, filter by type (income/expense), and view financial metrics with a clean, responsive UI styled with Tailwind CSS and `lucide-react` icons.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Add/Edit Entries**: Input income or expense details with form validation (`ExpenseInputForm.jsx`).
+- **View Entries**: Display all entries with category, date, and amount, with edit/delete options (`ExpensesList.jsx`).
+- **Filter Entries**: Toggle between all, income, or expense entries (`FilterMenu.jsx`).
+- **Financial Metrics**: View total income, expenses, and net balance (`DataCard.jsx`).
+- **Notifications**: Show success, error, or info messages with toast notifications (`Toast.jsx`).
+- **Persistent Storage**: Save entries to `localStorage` for persistence across sessions (`App.jsx`).
+- **Responsive Design**: Styled with Tailwind CSS for a modern, mobile-friendly UI.
+- **Icons**: Use `lucide-react` for intuitive visual feedback.
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React**: Frontend library for building the UI.
+- **Tailwind CSS**: Utility-first CSS framework for styling.
+- **lucide-react**: Icon library for UI elements.
+- **localStorage**: Browser storage for persisting expense data.
+- **Vite**: Build tool for fast development and bundling.
+- **Node.js**: Runtime for development and dependency management.
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Steps
+
+1.Clone the repository:
+git clone https://github.com/your-username/your-repo.git
+2.Go to the project folder: cd your-repo
+3.Go to the project folder: cd YOUR_REPO_NAME
+4.Install dependencies: npm install
+5.Start the app: npm run dev
+6.Open http://localhost:5173 in your browser (or the port Vite uses)
