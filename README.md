@@ -29,12 +29,10 @@ A React-based web application for tracking income and expenses, with data persis
 - Node.js (v16 or higher)
 - npm or yarn
 
-### Steps
+## Setup Instructions
 
-1.Clone the repository:
-git clone https://github.com/your-username/your-repo.git
-2.Go to the project folder: cd your-repo
-3.Go to the project folder: cd YOUR_REPO_NAME
-4.Install dependencies: npm install
-5.Start the app: npm run dev
-6.Open http://localhost:5173 in your browser (or the port Vite uses)
+1. Clone the repo: `git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git`
+2. Go to the project folder: `cd YOUR_REPO_NAME`
+3. Install dependencies: `npm install`
+4. Start the app: `npm run dev`
+5. Open `http://localhost:5173` in your browser (or the port Vite uses)
