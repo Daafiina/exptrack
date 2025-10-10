@@ -48,17 +48,23 @@ export default function App() {
     setToasts((prev) => prev.filter((t) => t.id !== id));
   };
 
-  //Kalkulimi Total Income
+  // Calculates the total income
   const totalIncome = expenses
     .filter((exp) => exp.type === "income")
-    .reduce((acc, exp) => acc + parseFloat(exp.amount), 0);
+    .reduce((acc, exp) => {
+      const amount = parseFloat(exp.amount);
+      return isNaN(amount) ? acc : acc + amount;
+    }, 0);
 
-  //Total income
-
+  // Calculates the total expense
   const totalExpenses = expenses
     .filter((exp) => exp.type === "expense")
-    .reduce((acc, exp) => acc + parseFloat(exp.amount), 0);
+    .reduce((acc, exp) => {
+      const amount = parseFloat(exp.amount);
+      return isNaN(amount) ? acc : acc + amount;
+    }, 0);
 
+  // Calculates balance
   const balance = totalIncome - totalExpenses;
 
   //Filter expense
