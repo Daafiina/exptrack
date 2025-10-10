@@ -1,4 +1,4 @@
-import { Wallet } from "lucide-react";
+import { Wallet, Wallet2, Wallet2Icon } from "lucide-react";
 import React from "react";
 
 export default function Header() {
@@ -10,7 +10,7 @@ export default function Header() {
           className="p-2 bg-gradient-to-r from-emerald-500 to-blue-500 rounded-2xl
                 shadow-lg"
         >
-          <Wallet className="w-8 h-8 text-white" />
+          <Wallet2Icon className="w-8 h-8 text-white" />
         </div>
         <h1 className="text-2xl font-bold text-white/85">MoneyFlow</h1>
       </div>

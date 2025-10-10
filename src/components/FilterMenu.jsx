@@ -11,7 +11,7 @@ export default function FilterMenu({ filter, setFilter }) {
             className={`flex-1 py-3 px-6 rounded-xl text-sm font-semibold capitalize
                 transition-all duration-200 ${
                   filter === filterT
-                    ? "bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-lg"
+                    ? "bg-gradient-to-r  from-emerald-600 to-blue-500 rounded-2xl text-white shadow-lg"
                     : "text-gray-400 hover:text-white hover:bg-gray-700/50"
                 }`}
           >
